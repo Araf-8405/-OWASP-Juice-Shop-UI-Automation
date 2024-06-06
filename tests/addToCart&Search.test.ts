@@ -37,7 +37,7 @@ test("Login with user, add 1 item to the basket, click on checkout, add a new ad
     })
 })
 
-test.only("Verify search button, search for apple, verify that 2 apple products show up and that banana product doesn't show up", async ({ AddToBasket,Product, page, browser,testData,  }) => {
+test("Verify search button, search for apple, verify that 2 apple products show up and that banana product doesn't show up", async ({ AddToBasket,Product, page, browser,testData,  }) => {
 
     await test.step("Navigate to Home Screen", async () => {
         await page.goto('#/login', { waitUntil: 'domcontentloaded' })
