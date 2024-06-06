@@ -1,0 +1,187 @@
+{
+  "config": {
+    "configFile": "F:\\OWASP Juice Shop\\-OWASP-Juice-Shop-UI-Automation\\playwright.config.ts",
+    "rootDir": "F:/OWASP Juice Shop/-OWASP-Juice-Shop-UI-Automation",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1,
+      "totalTime": 15986.529000043869
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "F:\\OWASP Juice Shop\\-OWASP-Juice-Shop-UI-Automation\\My-Reporter.js",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "F:/OWASP Juice Shop/-OWASP-Juice-Shop-UI-Automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chrome:latest:MacOS Catalina@lambdatest",
+        "name": "chrome:latest:MacOS Catalina@lambdatest",
+        "testDir": "F:/OWASP Juice Shop/-OWASP-Juice-Shop-UI-Automation",
+        "testIgnore": [],
+        "testMatch": [
+          "addToCart&Search.test.ts"
+        ],
+        "timeout": 180000
+      },
+      {
+        "outputDir": "F:/OWASP Juice Shop/-OWASP-Juice-Shop-UI-Automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chrome:latest:Windows 10@lambdatest",
+        "name": "chrome:latest:Windows 10@lambdatest",
+        "testDir": "F:/OWASP Juice Shop/-OWASP-Juice-Shop-UI-Automation",
+        "testIgnore": [],
+        "testMatch": [
+          "addToCart&Search.test.ts"
+        ],
+        "timeout": 180000
+      },
+      {
+        "outputDir": "F:/OWASP Juice Shop/-OWASP-Juice-Shop-UI-Automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "F:/OWASP Juice Shop/-OWASP-Juice-Shop-UI-Automation",
+        "testIgnore": [],
+        "testMatch": [
+          "addToCart&Search.test.ts"
+        ],
+        "timeout": 180000
+      },
+      {
+        "outputDir": "F:/OWASP Juice Shop/-OWASP-Juice-Shop-UI-Automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "F:/OWASP Juice Shop/-OWASP-Juice-Shop-UI-Automation",
+        "testIgnore": [],
+        "testMatch": [
+          "addToCart&Search.test.ts"
+        ],
+        "timeout": 180000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.36.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\addToCart&Search.test.ts",
+      "file": "tests/addToCart&Search.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify search button, search for apple, verify that 2 apple products show up and that banana product doesn't show up",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 13195,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Apple products found: 2\n"
+                    },
+                    {
+                      "text": "Banana products found: 0\n"
+                    },
+                    {
+                      "text": "Test passed\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Navigate to Home Screen",
+                      "duration": 2982
+                    },
+                    {
+                      "title": "Login with user",
+                      "duration": 6840
+                    },
+                    {
+                      "title": "search for apple",
+                      "duration": 2339
+                    },
+                    {
+                      "title": "verify that 2 apple products show up and that banana product doesn't show up",
+                      "duration": 52
+                    }
+                  ],
+                  "startTime": "2024-06-06T11:38:28.466Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "F:\\OWASP Juice Shop\\-OWASP-Juice-Shop-UI-Automation\\test-results\\tests-addToCart&Search-Verify-search-button-se-3cfca-show-up-and-that-banana-product-doesn-t-show-up-chrome\\video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "F:\\OWASP Juice Shop\\-OWASP-Juice-Shop-UI-Automation\\test-results\\tests-addToCart&Search-Verify-search-button-se-3cfca-show-up-and-that-banana-product-doesn-t-show-up-chrome\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fd133c19fb54b4011870-8e353e4f6d5efbf56ce4",
+          "file": "tests/addToCart&Search.test.ts",
+          "line": 40,
+          "column": 6
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
